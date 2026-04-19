@@ -1,0 +1,123 @@
+.my-bookings-page {
+  padding-bottom: 5rem;
+}
+
+.page-header {
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: var(--text-muted);
+}
+
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.booking-item {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 1fr;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+@media (max-width: 900px) {
+  .booking-item {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+
+.booking-car-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .info-row {
+    justify-content: center;
+  }
+}
+
+.booking-dates {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.date-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date-box svg {
+  color: var(--primary);
+}
+
+.date-box label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.date-box span {
+  font-weight: 700;
+}
+
+.booking-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-price label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.booking-price span {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.booking-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.status-pending { background: rgba(245, 158, 11, 0.1); color: var(--pending); }
+.status-approved { background: rgba(16, 185, 129, 0.1); color: var(--success); }
+.status-rejected { background: rgba(239, 68, 68, 0.1); color: var(--error); }
+.status-completed { background: rgba(99, 102, 241, 0.1); color: var(--primary); }
+.status-cancelled { background: rgba(148, 163, 184, 0.1); color: var(--text-muted); }
+
+.status-icon {
+  flex-shrink: 0;
+}
